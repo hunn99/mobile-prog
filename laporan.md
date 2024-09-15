@@ -16,6 +16,8 @@ Apa yang terjadi ? Jika terjadi error, silakan perbaiki namun tetap menggunakan 
 Nama 'test' sudah di definisikan sebelumnya, jadi tidak perlu di definisikan lagi.
 Jadi harus mendefinisikan nama 'test' yang baru.
 
+![alt text](image.png)
+
 Praktikum 2!
 Langkah 2:
 Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan! Lalu perbaiki jika terjadi error.
@@ -24,6 +26,9 @@ Karena penggunaan variabel counter tanpa mendeklarasikannya terlebih dahulu
 Langkah 3:
 Apa yang terjadi ? Jika terjadi error, silakan perbaiki namun tetap menggunakan do-while.
 Mengeluarkan output angka 0-76
+
+![alt text](image-1.png)
+![alt text](image-2.png)
 
 Praktikum 3!
 Langkah 2:
@@ -34,3 +39,9 @@ Langkah 3:
 Apa yang terjadi ? Jika terjadi error, silakan perbaiki namun tetap menggunakan for dan break-continue.
 Kesalahan nama 'Index', if tidak ditulis dengan huruf kecil, kesalahan titik koma, kesalahan penulisan else, dan kesalahan syarat di else if.
 
+![alt text](image-3.png)
+
+
+TUGAS!
+![alt text](image-4.png)
+![alt text](image-5.png)
