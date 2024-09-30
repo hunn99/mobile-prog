@@ -1,16 +1,36 @@
-# hello_world
+## Praktikum 1: Membuat Project Flutter Baru
+![alt text](images/image.png)
 
-A new Flutter project.
+## Praktikum 2: Menghubungkan Perangkat Android atau Emulator
+Menggunakan chrome emulator untuk mencoba aplikasi yang sudah dibuat 
+![alt text](images/image1.png)
 
-## Getting Started
+## Praktikum 3: Membuat Repository GitHub dan Laporan Praktikum
+![alt text](images/image2.png)
 
-This project is a starting point for a Flutter application.
+## Praktikum 4: Menerapkan Widget Dasar
+Text_Widget
+![alt text](images/image3.png)
 
-A few resources to get you started if this is your first Flutter project:
+Image_Widget
+![alt text](images/image4.png)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Praktikum 5: Menerapkan Widget Material Design dan iOS Cupertino
+Langkah 1: Cupertino Button dan Loading Bar
+![alt text](images/image5.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Langkah 2: Floating Action Button (FAB)
+![alt text](images/image6.png)
+
+Langkah 3: Scaffold Widget
+![alt text](iamges/image7.png)
+
+Langkah 4: Dialog Widget
+![alt text](images/image8.png)
+
+Langkah 5: Input dan Selection Widget
+![alt text](images/image9.png)
+
+Langkah 6: Date and Time Pickers
+![alt text](images/image10.png)
+
