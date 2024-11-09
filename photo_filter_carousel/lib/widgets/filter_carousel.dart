@@ -3,7 +3,7 @@ import 'package:photo_filter_carousel/widgets/filter_selector.dart';
 
 @immutable
 class PhotoFilterCarousel extends StatefulWidget {
-  const PhotoFilterCarousel({super.key});
+  const PhotoFilterCarousel({super.key, required String imagePath});
 
   @override
   State<PhotoFilterCarousel> createState() => _PhotoFilterCarouselState();
