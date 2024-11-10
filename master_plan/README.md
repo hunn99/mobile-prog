@@ -128,3 +128,50 @@ Menggunakan getter di sini memungkinkan tampilan yang mudah diperbarui, karena n
 
 4. Lakukan capture hasil dari Langkah 9 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
 5. Kumpulkan laporan praktikum Anda berupa link commit atau repository GitHub ke dosen yang telah disepakati !
+
+
+# Praktikum 3: Membuat State di Multiple Screens
+Langkah 1: Edit PlanProvider
+![alt text](image-20.png)
+
+Langkah 2: Edit main.dart
+![alt text](image-21.png)
+
+Langkah 3: Edit plan_screen.dart
+![alt text](image-22.png)
+
+Langkah 4: Error
+Langkah 5: Tambah getter Plan
+![alt text](image-23.png)
+
+Langkah 6: Method initState()
+![alt text](image-24.png)
+
+Langkah 7: Widget build
+![alt text](image-25.png)
+![alt text](image-26.png)
+
+Langkah 8: Edit _buildTaskTile
+![alt text](image-27.png)
+
+Langkah 9: Buat screen baru
+![alt text](image-28.png)
+![alt text](image-29.png)
+
+Langkah 10: Pindah ke class _PlanCreatorScreenState
+![alt text](image-30.png)
+
+Langkah 11: Pindah ke method build
+![alt text](image-31.png)
+
+Langkah 12: Buat widget _buildListCreator
+![alt text](image-32.png)
+
+Langkah 13: Buat void addPlan()
+![alt text](image-33.png)
+
+Langkah 14: Buat widget _buildMasterPlans()
+![alt text](image-34.png)
+
+![alt text](image-35.png)
+
