@@ -175,3 +175,14 @@ Langkah 14: Buat widget _buildMasterPlans()
 
 ![alt text](image-35.png)
 
+# Tugas Praktikum 3: State di Multiple Screens
+1. Selesaikan langkah-langkah praktikum tersebut, lalu dokumentasikan berupa GIF hasil akhir praktikum beserta penjelasannya di file README.md! Jika Anda menemukan ada yang error atau tidak berjalan dengan baik, silakan diperbaiki sesuai dengan tujuan aplikasi tersebut dibuat.
+2. Berdasarkan Praktikum 3 yang telah Anda lakukan, jelaskan maksud dari gambar diagram berikut ini!
+![alt text](image-36.png)
+
+Pengelolaan State: Sebelumnya, state management dilakukan dengan menggunakan PlanProvider yang menyimpan data dan status aplikasi. Namun, setelah menggunakan Navigator Push, pengelolaan state menjadi lebih terpisah antara layar yang satu dengan yang lainnya. Setiap layar dapat mengelola state-nya sendiri, sehingga lebih mudah untuk mengatur dan memelihara.
+
+Navigasi dan Struktur Widget: Dengan menggunakan Navigator Push, kita bisa memisahkan layar-layar aplikasi menjadi lebih terorganisir dan modular. Ini memungkinkan kita untuk berpindah ke layar baru (seperti PlanScreen) dengan cara yang lebih terstruktur. Selain itu, penggunaan widget seperti Scaffold dan SafeArea membantu meningkatkan desain tampilan dan memberikan perlindungan terhadap elemen UI yang mungkin terpotong di layar. Dengan Navigator Push, logika dan tampilan antar layar dapat dipisahkan dengan lebih jelas, membuat aplikasi menjadi lebih mudah untuk dirawat dan dikembangkan.
+
+3. Lakukan capture hasil dari Langkah 14 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
+4. Kumpulkan laporan praktikum Anda berupa link commit atau repository GitHub ke dosen yang telah disepakati !
