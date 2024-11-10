@@ -23,7 +23,9 @@ Langkah 6: Implementasi filter carousel
 2. Gabungkan hasil praktikum 1 dengan hasil praktikum 2 sehingga setelah melakukan pengambilan foto, dapat dibuat filter carouselnya!
 
 3. Jelaskan maksud void async pada praktikum 1?
+Dalam kode Future main() async { ... }, Future menunjukkan bahwa fungsi main adalah fungsi asinkron yang menghasilkan sebuah objek Future tanpa nilai pengembalian (void). Kata kunci async menandakan fungsi ini sebagai asinkron, memungkinkan penggunaan kata kunci await di dalamnya untuk menunggu penyelesaian operasi asinkron lainnya tanpa menghentikan jalannya program. Dengan kombinasi ini, fungsi main bisa melakukan operasi asinkron secara efisien dan menjaga responsivitas program.
 
 4. Jelaskan fungsi dari anotasi @immutable dan @override ?
+Dalam kode Future main() async { ... }, Future menunjukkan bahwa fungsi main adalah fungsi asinkron yang menghasilkan sebuah objek Future tanpa nilai pengembalian (void). Kata kunci async menandakan fungsi ini sebagai asinkron, memungkinkan penggunaan kata kunci await di dalamnya untuk menunggu penyelesaian operasi asinkron lainnya tanpa menghentikan jalannya program. Dengan kombinasi ini, fungsi main bisa melakukan operasi asinkron secara efisien dan menjaga responsivitas program.
 
 5. Kumpulkan link commit repository GitHub Anda kepada dosen yang telah disepakati!
