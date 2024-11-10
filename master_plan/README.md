@@ -80,3 +80,30 @@ Jadi, kedua metode ini membantu mengelola inisialisasi dan pembersihan sumber da
 
 
 6. Kumpulkan laporan praktikum Anda berupa link commit atau repository GitHub ke dosen yang telah disepakati !
+
+
+# Praktikum 2: Mengelola Data Layer dengan InheritedWidget dan InheritedNotifier
+
+Langkah 1: Buat file plan_provider.dart
+![alt text](image-13.png)
+
+Langkah 2: Edit main.dart
+![alt text](image-14.png)
+
+Langkah 3: Tambah method pada model plan.dart
+![alt text](image-15.png)
+
+Langkah 4: Pindah ke PlanScreen
+Langkah 5: Edit method _buildAddTaskButton
+![alt text](image-16.png)
+
+Langkah 6: Edit method _buildTaskTile
+![alt text](image-17.png)
+
+Langkah 7: Edit _buildList
+![alt text](image-18.png)
+
+Langkah 8: Tetap di class PlanScreen
+Langkah 9: Tambah widget SafeArea
+![alt text](image-19.png)
+
