@@ -113,3 +113,24 @@ Pada langkah 1, kode memanfaatkan FutureGroup<int>, yang memungkinkan penambahan
 
 Sedangkan di langkah 4, kode menggunakan Future.wait<int>(), yang lebih sederhana karena langsung menunggu semua Future dalam daftar (seperti returnOneAsync(), returnTwoAsync(), returnThreeAsync()) selesai secara bersamaan. Pendekatan ini tidak memerlukan penambahan Future secara manual atau pemanggilan .close().
 
+# Praktikum 5: Menangani Respon Error pada Async Code
+
+Langkah 1: Buka file main.dart
+![alt text](image-21.png)
+
+Langkah 2: ElevatedButton
+![alt text](image-22.png)
+
+Langkah 3: Run
+![alt text](image-23.png)
+
+Langkah 4: Tambah method handleError()
+![alt text](image-24.png)
+![alt text](image-25.png)
+
+Panggil method handleError() tersebut di ElevatedButton, lalu run. Apa hasilnya? Jelaskan perbedaan kode langkah 1 dan 4!
+
+Pada langkah 1, metode returnError() sengaja melemparkan sebuah Exception setelah penundaan 2 detik tanpa melakukan penanganan kesalahan apa pun.
+
+Di langkah 4, metode handleError() menambahkan penanganan kesalahan menggunakan blok try-catch. Ketika returnError() melemparkan error, error tersebut akan ditangkap dalam blok catch dan ditampilkan di UI menggunakan setState(). Selain itu, blok finally memastikan bahwa pesan "Complete" dicetak ke konsol, baik terjadi error maupun tidak, menandakan bahwa proses eksekusi telah selesai.
+
