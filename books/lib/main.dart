@@ -1,6 +1,9 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 import 'package:http/http.dart' as http;
+import 'package:async/async.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,6 +34,23 @@ class FuturePage extends StatefulWidget {
 }
 
 class _FuturePageState extends State<FuturePage> {
+  late Completer completer;
+
+  Future getNumber() {
+    completer = Completer<int>();
+    calculate();
+    return completer.future;
+  }
+
+  Future calculate() async {
+    try {
+      await Future.delayed(const Duration(seconds: 5));
+      completer.complete(42);
+    } catch (_) {
+      completer.completeError({});
+    }
+  }
+
   Future<Response> getData() async {
     const autority = 'www.googleapis.com';
     const path = 'books/v1/volumes/3GY7EAAAQBAJ';
@@ -51,7 +71,20 @@ class _FuturePageState extends State<FuturePage> {
           ElevatedButton(
             child: const Text('Go!'),
             onPressed: () {
-              count();
+              returnFG();
+              // getNumber().then((value) {
+              //   setState(() {
+              //     result = value.toString();
+              //   });
+              // }).catchError((e) {
+              //   result = 'An error occurred';
+              // });
+              // getNumber().then((value) {
+              //   setState(() {
+              //     result = value.toString();
+              //   });
+              // });
+              // count();
               // setState(() {});
               // getData().then((value) {
               //   result = value.body.toString().substring(0, 450);
@@ -95,6 +128,29 @@ class _FuturePageState extends State<FuturePage> {
     setState(() {
       result = total.toString();
     });
+  }
+
+  void returnFG() {
+    // FutureGroup<int> futureGroup = FutureGroup<int>();
+    // futureGroup.add(returnOneAsync());
+    // futureGroup.add(returnTwoAsync());
+    // futureGroup.add(returnThreeAsync());
+    // futureGroup.close();
+    // futureGroup.future.then((List<int> value) {
+    //   int total = 0;
+    //   for (var element in value) {
+    //     total += element;
+    //   }
+    //   setState(() {
+    //     result = total.toString();
+    //   });
+    // });
+
+    final futures = Future.wait<int>([
+      returnOneAsync(),
+      returnTwoAsync(),
+      returnThreeAsync(),
+    ]);
   }
 }
 

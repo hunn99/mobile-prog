@@ -63,5 +63,53 @@ Memperbarui State: Setelah ketiga fungsi selesai dijalankan dan total dihitung, 
 Secara keseluruhan, count menghitung jumlah total dari hasil tiga fungsi asinkron, menunggu setiap fungsi selesai sebelum melanjutkan ke fungsi berikutnya. Total penjumlahan yang dihasilkan adalah 6 (1 + 2 + 3), yang kemudian disimpan dalam result untuk ditampilkan pada UI.
 
 
+# Praktikum 3: Menggunakan Completer di Future
 
+Langkah 1: Buka main.dart
+![alt text](image-11.png)
+
+Langkah 2: Tambahkan variabel dan method
+![alt text](image-12.png)
+
+Langkah 3: Ganti isi kode onPressed()
+![alt text](image-13.png)
+
+Langkah 4:
+![alt text](image-14.png)
+
+Jelaskan maksud kode langkah 2 tersebut!
+Kode di atas menggunakan kelas Completer untuk mengendalikan penyelesaian sebuah Future secara manual.
+Kode ini menggunakan Completer untuk menunda penyelesaian sebuah Future sampai perhitungan selesai dilakukan. Fungsi getNumber memulai calculate yang akan menunggu 5 detik sebelum menyelesaikan Future dengan nilai 42. Hal ini memungkinkan kontrol manual terhadap kapan Future tersebut selesai, memberikan fleksibilitas dalam penyelesaian proses asynchronous.
+
+Langkah 5: Ganti method calculate()
+![alt text](image-15.png)
+
+Langkah 6: Pindah ke onPressed()
+![alt text](image-16.png)
+
+Jelaskan maksud perbedaan kode langkah 2 dengan langkah 5-6 tersebut!
+Pada langkah 2, fungsi calculate() hanya menyelesaikan Future dengan mengembalikan nilai 42 setelah 5 detik, tanpa ada penanganan error. Sedangkan pada langkah 5, calculate() ditambahkan blok try-catch untuk menangani error. Jika error terjadi, completer.completeError({}) akan dipanggil untuk menandai Future sebagai gagal.
+
+Kemudian di langkah 6, fungsi onPressed() diperbarui untuk menangani hasil Future dengan lebih fleksibel. Jika Future berhasil, hasilnya akan diproses dan ditampilkan menggunakan then(). Jika terjadi error, catchError() akan menangkapnya dan menampilkan pesan kesalahan, sehingga aplikasi dapat menampilkan respons yang sesuai tergantung pada keberhasilan atau kegagalan Future.
+
+# Praktikum 4: Memanggil Future secara paralel
+
+Langkah 1: Buka file main.dart
+![alt text](image-17.png)
+
+Langkah 2: Edit onPressed()
+![alt text](image-18.png)
+
+Langkah 3: Run
+![alt text](image-19.png)
+
+hasilnya dalam 3 detik berupa angka 6 lebih cepat dibandingkan praktikum sebelumnya menunggu sampai 9 detik.
+
+Langkah 4: Ganti variabel futureGroup
+![alt text](image-20.png)
+
+Jelaskan maksud perbedaan kode langkah 1 dan 4!
+Pada langkah 1, kode memanfaatkan FutureGroup<int>, yang memungkinkan penambahan Future satu per satu sebelum menutup grup dengan futureGroup.close(). Setelah ditutup, grup akan menunggu semua Future di dalamnya selesai untuk menghitung totalnya.
+
+Sedangkan di langkah 4, kode menggunakan Future.wait<int>(), yang lebih sederhana karena langsung menunggu semua Future dalam daftar (seperti returnOneAsync(), returnTwoAsync(), returnThreeAsync()) selesai secara bersamaan. Pendekatan ini tidak memerlukan penambahan Future secara manual atau pemanggilan .close().
 
